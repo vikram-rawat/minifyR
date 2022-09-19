@@ -14,12 +14,12 @@
 #' @example minify_bundle_files( asset_input_folder = "E:\\Coding\\R_code\\github\\some_project\\app\\js\\", asset_output_file = "E:\\Coding\\R_code\\github\\some_project\\app\\main.mini.js")
 #' @noRd
 #' @export
-minify_bundle_files <- function( asset_input_folder, asset_output_file ) {
+minify_bundle_files <- function(asset_input_folder, asset_output_file) {
   # check the environment value for the minify_gobinary_path
   minify_path <- Sys.getenv("minify_gobinary_path")
-  if(
-    nchar( minify_path ) == 0
-  ){
+  if (
+    nchar(minify_path) == 0
+  ) {
     minify_path <- system.file(package = "minifyR", "minify.exe")
   }
 
