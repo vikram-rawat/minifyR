@@ -1,4 +1,4 @@
-#' The application server-side
+#' Minify folders
 #' @description This function will minify any folder recursively and
 #' create all the files in the specified folder
 #' You can even download the binary for your own OS from
